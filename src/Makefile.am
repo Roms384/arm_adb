@@ -13,7 +13,7 @@ adb_CXXFLAGS = -I$(includedir) -I$(top_srcdir)/include \
 	       -lcrypto -lpthread -lrt -DADB_HOST=1 -DHAVE_FORKEXEC=1 \
 	       -DHAVE_SYMLINKS -DHAVE_TERMIO_H -DHAVE_SYS_SOCKET_H \
 	       -DHAVE_OFF64_T -D_GNU_SOURCE -D_XOPEN_SOURCE -DHAVE_ANDROID_OS=1 \
-	       -D'ADB_VERSION="x.x-x"' -DADB_HOST_ON_TARGET=1 -DALLOW_ADBD_ROOT=1 \
+	       -D'ADB_VERSION="x.x-x"' -DADB_HOST_ON_TARGET=0 -DALLOW_ADBD_ROOT=1 \
 	       -DWORKAROUND_BUG6558362 -DFAKE_LOG_DEVICE=1 -DDONT_USE_LIBUSB \
 	       -DDONT_USE_MDNS
 adb_LDADD = $(top_srcdir)/lib/libbase.la \
